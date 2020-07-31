@@ -3,7 +3,6 @@ Test configuration for estimating the file system API request costs (Alluxio/S3)
 
 The following table contains the complete test results for each query from the TPC-DS suite excluding query q72:
 
-```
 |Query name|No. of executions|File Infos Got - avg. value per query|GetFileInfo Operations - avg. value per query|GetFileInfo Operations - S3 cost per query ($)|File Infos Got - S3 cost per query ($)|
 |----------|-----------------|-------------------------------------|---------------------------------------------|----------------------------------------------|--------------------------------------|
 |q01       |10               |10811.80                             |8646.30                                      |0.0043                                        |0.0035                                |
@@ -108,4 +107,3 @@ The following table contains the complete test results for each query from the T
 |q97       |10               |13378.40                             |10704.00                                     |0.0054                                        |0.0043                                |
 |q98       |10               |6864.20                              |5492.20                                      |0.0027                                        |0.0022                                |
 |q99       |10               |9210.00                              |7365.00                                      |0.0037                                        |0.0029                                |
-```
