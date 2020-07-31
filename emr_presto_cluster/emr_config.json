@@ -1,0 +1,62 @@
+[
+    {
+        "classification": "spark-defaults",
+        "properties": {
+            "spark.driver.memoryOverhead": "1024",
+            "spark.executor.memoryOverhead": "2048"
+        }
+    },
+    {
+        "classification": "emrfs-site",
+        "properties": {
+            "fs.s3.maxConnections": "10000"
+        }
+    },
+    {
+        "classification": "hive-env",
+        "properties": {
+            "hive.exec.max.dynamic.partitions": "100000",
+            "hive.enforce.bucketing": "true",
+            "hive.exec.dynamic.partition": "true",
+            "hive.exec.dynamic.partition.mode": "nonstrict",
+            "hive.exec.max.dynamic.partitions.pernode": "5000"
+        }
+    },
+    {
+        "classification": "hive-site",
+        "properties": {
+            "s3select.filter": "true"
+        }
+    },
+    {
+        "classification": "presto-config",
+        "properties": {
+            "exchange.concurrent-request-multiplier": "12",
+            "node-scheduler.max-splits-per-node": "500",
+            "task.max-worker-threads": "16",
+            "task.concurrency": "16",
+            "query.stage-count-warning-threshold": "100",
+            "query.max-stage-count": "1000",
+            "task.http-response-threads": "100",
+            "query.max-total-memory": "20G",
+            "query.max-memory-per-node": "10GB",
+            "query.min-expire-age": "30m",
+            "exchange.client-threads": "25",
+            "query.max-total-memory-per-node": "11GB",
+            "query.max-history": "40",
+            "task.min-drivers": "32",
+            "memory.heap-headroom-per-node": "3GB",
+            "query.client.timeout": "30m",
+            "query.max-memory": "18GB"
+        }
+    },
+    {
+        "classification": "presto-connector-hive",
+        "properties": {
+            "hive.s3select-pushdown.max-connections": "500",
+            "hive.s3select-pushdown.enabled": "true",
+            "hive.s3-file-system-type": "PRESTO",
+            "hive.s3.max-connections": "500"
+        }
+    }
+]
